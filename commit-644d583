@@ -1,0 +1,2018 @@
+From 644d58382361f1764fdb53b1d6db75e5578cb28c Mon Sep 17 00:00:00 2001
+From: bessonniy11 <bessonniy11@gmail.com>
+Date: Sat, 26 Sep 2020 11:42:18 +0300
+Subject: 54 lesson
+
+
+diff --git a/Trash/App.test.js b/Trash/App.test.js
+new file mode 100644
+index 0000000..68a7faf
+--- /dev/null
++++ b/Trash/App.test.js
+@@ -0,0 +1,9 @@
++import React from 'react';
++import { render } from '@testing-library/react';
++import App from '../src/App';
++
++test('renders learn react link', () => {
++  const { getByText } = render(<App />);
++  const linkElement = getByText(/learn react/i);
++  expect(linkElement).toBeInTheDocument();
++});
+diff --git a/Trash/logo.png b/Trash/logo.png
+new file mode 100644
+index 0000000..da9d322
+Binary files /dev/null and b/Trash/logo.png differ
+diff --git a/Trash/logo.svg b/Trash/logo.svg
+new file mode 100644
+index 0000000..6b60c10
+--- /dev/null
++++ b/Trash/logo.svg
+@@ -0,0 +1,7 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
++    <g fill="#61DAFB">
++        <path d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"/>
++        <circle cx="420.9" cy="296.5" r="45.7"/>
++        <path d="M520.5 78.1z"/>
++    </g>
++</svg>
+diff --git a/Trash/render.js b/Trash/render.js
+index ce8d262..2cc3c38 100644
+--- a/Trash/render.js
++++ b/Trash/render.js
+@@ -4,8 +4,8 @@ import '../src/index.css';
+ import App from './App';
+ import * as serviceWorker from './serviceWorker';
+ import {BrowserRouter} from "react-router-dom";
+-import {addPost} from "./redux/state";
+-import {addMessage} from "./redux/state";
++import {addPost} from "./redux/store";
++import {addMessage} from "./redux/store";
+ 
+ 
+ 
+diff --git a/package-lock.json b/package-lock.json
+index 69df2d2..95f4480 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1804,6 +1804,15 @@
+       "resolved": "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-15.0.0.tgz",
+       "integrity": "sha512-FA/BWv8t8ZWJ+gEOnLLd8ygxH/2UFbAvgEonyfN6yWGLKc7zVjbpl2Y4CTjid9h2RfgPP6SEt6uHwEOply00yw=="
+     },
++    "@types/yauzl": {
++      "version": "2.9.1",
++      "resolved": "https://registry.npmjs.org/@types/yauzl/-/yauzl-2.9.1.tgz",
++      "integrity": "sha512-A1b8SU4D10uoPjwb0lnHmmu8wZhR9d+9o2PKBQT2jU5YPTKsxac6M2qGAdY7VcL+dHHhARVUDmeg0rOrcd9EjA==",
++      "optional": true,
++      "requires": {
++        "@types/node": "*"
++      }
++    },
+     "@typescript-eslint/eslint-plugin": {
+       "version": "2.31.0",
+       "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.31.0.tgz",
+@@ -2111,6 +2120,11 @@
+         }
+       }
+     },
++    "agent-base": {
++      "version": "5.1.1",
++      "resolved": "https://registry.npmjs.org/agent-base/-/agent-base-5.1.1.tgz",
++      "integrity": "sha512-TMeqbNl2fMW0nMjTEPOwe3J/PRFP4vqeoNuQMG0HlMrtm5QxKqdvAkZ1pRBQ/ulIyDD5Yq0nJ7YbdD8ey0TO3g=="
++    },
+     "aggregate-error": {
+       "version": "3.0.1",
+       "resolved": "https://registry.npmjs.org/aggregate-error/-/aggregate-error-3.0.1.tgz",
+@@ -2397,6 +2411,14 @@
+       "resolved": "https://registry.npmjs.org/aws4/-/aws4-1.9.1.tgz",
+       "integrity": "sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug=="
+     },
++    "axios": {
++      "version": "0.20.0",
++      "resolved": "https://registry.npmjs.org/axios/-/axios-0.20.0.tgz",
++      "integrity": "sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==",
++      "requires": {
++        "follow-redirects": "^1.10.0"
++      }
++    },
+     "axobject-query": {
+       "version": "2.1.2",
+       "resolved": "https://registry.npmjs.org/axobject-query/-/axobject-query-2.1.2.tgz",
+@@ -2893,6 +2915,27 @@
+       "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.0.0.tgz",
+       "integrity": "sha512-Phlt0plgpIIBOGTT/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X/MR+zSyBEkL05ffWgnRSf/DXv+WrUAVr93/ow=="
+     },
++    "bl": {
++      "version": "4.0.3",
++      "resolved": "https://registry.npmjs.org/bl/-/bl-4.0.3.tgz",
++      "integrity": "sha512-fs4G6/Hu4/EE+F75J8DuN/0IpQqNjAdC7aEQv7Qt8MHGUH7Ckv2MwTEEeN9QehD0pfIDkMI1bkHYkKy7xHyKIg==",
++      "requires": {
++        "buffer": "^5.5.0",
++        "inherits": "^2.0.4",
++        "readable-stream": "^3.4.0"
++      },
++      "dependencies": {
++        "buffer": {
++          "version": "5.6.0",
++          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.6.0.tgz",
++          "integrity": "sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==",
++          "requires": {
++            "base64-js": "^1.0.2",
++            "ieee754": "^1.1.4"
++          }
++        }
++      }
++    },
+     "bluebird": {
+       "version": "3.7.2",
+       "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz",
+@@ -3126,6 +3169,11 @@
+         "isarray": "^1.0.0"
+       }
+     },
++    "buffer-crc32": {
++      "version": "0.2.13",
++      "resolved": "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz",
++      "integrity": "sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI="
++    },
+     "buffer-from": {
+       "version": "1.1.1",
+       "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.1.tgz",
+@@ -4365,6 +4413,11 @@
+         }
+       }
+     },
++    "devtools-protocol": {
++      "version": "0.0.781568",
++      "resolved": "https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.781568.tgz",
++      "integrity": "sha512-9Uqnzy6m6zEStluH9iyJ3iHyaQziFnMnLeC8vK0eN6smiJmIx7+yB64d67C2lH/LZra+5cGscJAJsNXO+MdPMg=="
++    },
+     "diff-sequences": {
+       "version": "24.9.0",
+       "resolved": "https://registry.npmjs.org/diff-sequences/-/diff-sequences-24.9.0.tgz",
+@@ -5454,6 +5507,27 @@
+         }
+       }
+     },
++    "extract-zip": {
++      "version": "2.0.1",
++      "resolved": "https://registry.npmjs.org/extract-zip/-/extract-zip-2.0.1.tgz",
++      "integrity": "sha512-GDhU9ntwuKyGXdZBUgTIe+vXnWj0fppUEtMDL0+idd5Sta8TGpHssn/eusA9mrPr9qNDym6SxAYZjNvCn/9RBg==",
++      "requires": {
++        "@types/yauzl": "^2.9.1",
++        "debug": "^4.1.1",
++        "get-stream": "^5.1.0",
++        "yauzl": "^2.10.0"
++      },
++      "dependencies": {
++        "get-stream": {
++          "version": "5.2.0",
++          "resolved": "https://registry.npmjs.org/get-stream/-/get-stream-5.2.0.tgz",
++          "integrity": "sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==",
++          "requires": {
++            "pump": "^3.0.0"
++          }
++        }
++      }
++    },
+     "extsprintf": {
+       "version": "1.3.0",
+       "resolved": "https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz",
+@@ -5524,6 +5598,14 @@
+         "bser": "2.1.1"
+       }
+     },
++    "fd-slicer": {
++      "version": "1.1.0",
++      "resolved": "https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz",
++      "integrity": "sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=",
++      "requires": {
++        "pend": "~1.2.0"
++      }
++    },
+     "figgy-pudding": {
+       "version": "3.5.2",
+       "resolved": "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.2.tgz",
+@@ -5799,6 +5881,11 @@
+         }
+       }
+     },
++    "fs-constants": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/fs-constants/-/fs-constants-1.0.0.tgz",
++      "integrity": "sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow=="
++    },
+     "fs-extra": {
+       "version": "8.1.0",
+       "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-8.1.0.tgz",
+@@ -6373,6 +6460,15 @@
+       "resolved": "https://registry.npmjs.org/https-browserify/-/https-browserify-1.0.0.tgz",
+       "integrity": "sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM="
+     },
++    "https-proxy-agent": {
++      "version": "4.0.0",
++      "resolved": "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz",
++      "integrity": "sha512-zoDhWrkR3of1l9QAL8/scJZyLu8j/gBkcwcaQOZh7Gyh/+uJQzGVETdgT30akuwkpL8HTRfssqI3BZuV18teDg==",
++      "requires": {
++        "agent-base": "5",
++        "debug": "4"
++      }
++    },
+     "iconv-lite": {
+       "version": "0.4.24",
+       "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz",
+@@ -8215,6 +8311,11 @@
+         "minimist": "^1.2.5"
+       }
+     },
++    "mkdirp-classic": {
++      "version": "0.5.3",
++      "resolved": "https://registry.npmjs.org/mkdirp-classic/-/mkdirp-classic-0.5.3.tgz",
++      "integrity": "sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A=="
++    },
+     "move-concurrently": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz",
+@@ -8972,6 +9073,11 @@
+         "sha.js": "^2.4.8"
+       }
+     },
++    "pend": {
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/pend/-/pend-1.2.0.tgz",
++      "integrity": "sha1-elfrVQpng/kRUzH89GY9XI4AelA="
++    },
+     "performance-now": {
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz",
+@@ -10130,6 +10236,11 @@
+         "ipaddr.js": "1.9.1"
+       }
+     },
++    "proxy-from-env": {
++      "version": "1.1.0",
++      "resolved": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz",
++      "integrity": "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg=="
++    },
+     "prr": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/prr/-/prr-1.0.1.tgz",
+@@ -10195,6 +10306,91 @@
+       "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz",
+       "integrity": "sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A=="
+     },
++    "puppeteer": {
++      "version": "5.2.1",
++      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-5.2.1.tgz",
++      "integrity": "sha512-PZoZG7u+T6N1GFWBQmGVG162Ak5MAy8nYSVpeeQrwJK2oYUlDWpHEJPcd/zopyuEMTv7DiztS1blgny1txR2qw==",
++      "requires": {
++        "debug": "^4.1.0",
++        "devtools-protocol": "0.0.781568",
++        "extract-zip": "^2.0.0",
++        "https-proxy-agent": "^4.0.0",
++        "mime": "^2.0.3",
++        "pkg-dir": "^4.2.0",
++        "progress": "^2.0.1",
++        "proxy-from-env": "^1.0.0",
++        "rimraf": "^3.0.2",
++        "tar-fs": "^2.0.0",
++        "unbzip2-stream": "^1.3.3",
++        "ws": "^7.2.3"
++      },
++      "dependencies": {
++        "find-up": {
++          "version": "4.1.0",
++          "resolved": "https://registry.npmjs.org/find-up/-/find-up-4.1.0.tgz",
++          "integrity": "sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==",
++          "requires": {
++            "locate-path": "^5.0.0",
++            "path-exists": "^4.0.0"
++          }
++        },
++        "locate-path": {
++          "version": "5.0.0",
++          "resolved": "https://registry.npmjs.org/locate-path/-/locate-path-5.0.0.tgz",
++          "integrity": "sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==",
++          "requires": {
++            "p-locate": "^4.1.0"
++          }
++        },
++        "p-limit": {
++          "version": "2.3.0",
++          "resolved": "https://registry.npmjs.org/p-limit/-/p-limit-2.3.0.tgz",
++          "integrity": "sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==",
++          "requires": {
++            "p-try": "^2.0.0"
++          }
++        },
++        "p-locate": {
++          "version": "4.1.0",
++          "resolved": "https://registry.npmjs.org/p-locate/-/p-locate-4.1.0.tgz",
++          "integrity": "sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==",
++          "requires": {
++            "p-limit": "^2.2.0"
++          }
++        },
++        "p-try": {
++          "version": "2.2.0",
++          "resolved": "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz",
++          "integrity": "sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ=="
++        },
++        "path-exists": {
++          "version": "4.0.0",
++          "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
++          "integrity": "sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w=="
++        },
++        "pkg-dir": {
++          "version": "4.2.0",
++          "resolved": "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz",
++          "integrity": "sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==",
++          "requires": {
++            "find-up": "^4.0.0"
++          }
++        },
++        "rimraf": {
++          "version": "3.0.2",
++          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz",
++          "integrity": "sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==",
++          "requires": {
++            "glob": "^7.1.3"
++          }
++        },
++        "ws": {
++          "version": "7.3.1",
++          "resolved": "https://registry.npmjs.org/ws/-/ws-7.3.1.tgz",
++          "integrity": "sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA=="
++        }
++      }
++    },
+     "q": {
+       "version": "1.5.1",
+       "resolved": "https://registry.npmjs.org/q/-/q-1.5.1.tgz",
+@@ -10559,6 +10755,18 @@
+       "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+       "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
+     },
++    "react-redux": {
++      "version": "7.2.1",
++      "resolved": "https://registry.npmjs.org/react-redux/-/react-redux-7.2.1.tgz",
++      "integrity": "sha512-T+VfD/bvgGTUA74iW9d2i5THrDQWbweXP0AVNI8tNd1Rk5ch1rnMiJkDD67ejw7YBKM4+REvcvqRuWJb7BLuEg==",
++      "requires": {
++        "@babel/runtime": "^7.5.5",
++        "hoist-non-react-statics": "^3.3.0",
++        "loose-envify": "^1.4.0",
++        "prop-types": "^15.7.2",
++        "react-is": "^16.9.0"
++      }
++    },
+     "react-router": {
+       "version": "5.2.0",
+       "resolved": "https://registry.npmjs.org/react-router/-/react-router-5.2.0.tgz",
+@@ -10767,6 +10975,15 @@
+         "strip-indent": "^3.0.0"
+       }
+     },
++    "redux": {
++      "version": "4.0.5",
++      "resolved": "https://registry.npmjs.org/redux/-/redux-4.0.5.tgz",
++      "integrity": "sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==",
++      "requires": {
++        "loose-envify": "^1.4.0",
++        "symbol-observable": "^1.2.0"
++      }
++    },
+     "regenerate": {
+       "version": "1.4.0",
+       "resolved": "https://registry.npmjs.org/regenerate/-/regenerate-1.4.0.tgz",
+@@ -12228,6 +12445,11 @@
+         "util.promisify": "~1.0.0"
+       }
+     },
++    "symbol-observable": {
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz",
++      "integrity": "sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ=="
++    },
+     "symbol-tree": {
+       "version": "3.2.4",
+       "resolved": "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz",
+@@ -12271,6 +12493,29 @@
+       "resolved": "https://registry.npmjs.org/tapable/-/tapable-1.1.3.tgz",
+       "integrity": "sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA=="
+     },
++    "tar-fs": {
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/tar-fs/-/tar-fs-2.1.0.tgz",
++      "integrity": "sha512-9uW5iDvrIMCVpvasdFHW0wJPez0K4JnMZtsuIeDI7HyMGJNxmDZDOCQROr7lXyS+iL/QMpj07qcjGYTSdRFXUg==",
++      "requires": {
++        "chownr": "^1.1.1",
++        "mkdirp-classic": "^0.5.2",
++        "pump": "^3.0.0",
++        "tar-stream": "^2.0.0"
++      }
++    },
++    "tar-stream": {
++      "version": "2.1.3",
++      "resolved": "https://registry.npmjs.org/tar-stream/-/tar-stream-2.1.3.tgz",
++      "integrity": "sha512-Z9yri56Dih8IaK8gncVPx4Wqt86NDmQTSh49XLZgjWpGZL9GK9HKParS2scqHCC4w6X9Gh2jwaU45V47XTKwVA==",
++      "requires": {
++        "bl": "^4.0.1",
++        "end-of-stream": "^1.4.1",
++        "fs-constants": "^1.0.0",
++        "inherits": "^2.0.3",
++        "readable-stream": "^3.1.1"
++      }
++    },
+     "terser": {
+       "version": "4.6.13",
+       "resolved": "https://registry.npmjs.org/terser/-/terser-4.6.13.tgz",
+@@ -12630,6 +12875,26 @@
+       "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz",
+       "integrity": "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
+     },
++    "unbzip2-stream": {
++      "version": "1.4.3",
++      "resolved": "https://registry.npmjs.org/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz",
++      "integrity": "sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg==",
++      "requires": {
++        "buffer": "^5.2.1",
++        "through": "^2.3.8"
++      },
++      "dependencies": {
++        "buffer": {
++          "version": "5.6.0",
++          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.6.0.tgz",
++          "integrity": "sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==",
++          "requires": {
++            "base64-js": "^1.0.2",
++            "ieee754": "^1.1.4"
++          }
++        }
++      }
++    },
+     "unicode-canonical-property-names-ecmascript": {
+       "version": "1.0.4",
+       "resolved": "https://registry.npmjs.org/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz",
+@@ -13973,6 +14238,15 @@
+         "camelcase": "^5.0.0",
+         "decamelize": "^1.2.0"
+       }
++    },
++    "yauzl": {
++      "version": "2.10.0",
++      "resolved": "https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz",
++      "integrity": "sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=",
++      "requires": {
++        "buffer-crc32": "~0.2.3",
++        "fd-slicer": "~1.1.0"
++      }
+     }
+   }
+ }
+diff --git a/package.json b/package.json
+index 3ceb915..52fc0c5 100644
+--- a/package.json
++++ b/package.json
+@@ -6,11 +6,15 @@
+     "@testing-library/jest-dom": "^4.2.4",
+     "@testing-library/react": "^9.5.0",
+     "@testing-library/user-event": "^7.2.1",
++    "axios": "^0.20.0",
+     "classnames": "^2.2.6",
++    "puppeteer": "^5.2.1",
+     "react": "^16.13.1",
+     "react-dom": "^16.13.1",
++    "react-redux": "^7.2.1",
+     "react-router-dom": "^5.2.0",
+-    "react-scripts": "3.4.1"
++    "react-scripts": "3.4.1",
++    "redux": "^4.0.5"
+   },
+   "scripts": {
+     "start": "react-scripts start",
+diff --git a/src/App.js b/src/App.js
+index 7d0d78e..ae5650f 100644
+--- a/src/App.js
++++ b/src/App.js
+@@ -1,42 +1,39 @@
+ import React from 'react';
+-import logo from './logo.svg';
+ import './App.css';
+ import Header from "./components/Header/Header";
+ import Navbar from "./components/Navbar/Navbar";
+ import Profile from "./components/Profile/Profile";
+-import Dialogs from "./components/Dialogs/Dialogs";
+-import {Route} from "react-router-dom"
+-import News from "./components/News/News";
+-
+ 
++import {Route} from "react-router-dom"
++import DialogsContainer from "./components/Dialogs/Message/DialogsContainer";
++import UsersContainer from "./components/Users/UsersContainer";
++import NewsContainer from "./components/News/NewsContainer";
++import MusicContainer from "./components/Profile/MyMusic/MusicContainer";
+ 
+ 
+-const App = (props) => {
+ 
++const App = () => {
+ 
+     return (
+-
+           <div className='app-wrapper'>
+               <Header />
+-              <Navbar state={props.state}/>
++              <Navbar />
+               <div className='app-wrapper-content'>
+                   <Route path='/dialogs'
+-                         render={ () => <Dialogs
+-                             state={props.state.dialogsPage} addMessage={props.addMessage}/> } />
++                         render={ () => <DialogsContainer/> } />
+                   <Route path='/profile'
+-                         render={ () => <Profile
+-                             state={props.state.profilePage}
+-                             dispatch={props.dispatch}
+-                             profilePage={props.state.profilePage}
+-                             clearPost={props.clearPost}/> }/>
++                         render={ () => <Profile/> }/>
+                   <Route path='/news'
+-                         render={ () => <News state={props.state.newsPage}/> }/>
+-
++                         render={ () => <NewsContainer/> }/>
++                  <Route path='/music'
++                         render={ () => <MusicContainer/> }/>
++                  <Route path='/users'
++                         render={ () => <UsersContainer/> }/>
+               </div>
+           </div>
+ 
+     );
+-}
++};
+ 
+ 
+ 
+diff --git a/src/App.test.js b/src/App.test.js
+deleted file mode 100644
+index 4db7ebc..0000000
+--- a/src/App.test.js
++++ /dev/null
+@@ -1,9 +0,0 @@
+-import React from 'react';
+-import { render } from '@testing-library/react';
+-import App from './App';
+-
+-test('renders learn react link', () => {
+-  const { getByText } = render(<App />);
+-  const linkElement = getByText(/learn react/i);
+-  expect(linkElement).toBeInTheDocument();
+-});
+diff --git a/src/components/Dialogs/DialogItem/DialogsItem.jsx b/src/components/Dialogs/DialogItem/DialogsItem.jsx
+index 2144de3..b027dd0 100644
+--- a/src/components/Dialogs/DialogItem/DialogsItem.jsx
++++ b/src/components/Dialogs/DialogItem/DialogsItem.jsx
+@@ -10,7 +10,6 @@ const DialogItem = (props) => {
+             <div className={s.dialog}>
+                 <NavLink to={path} activeClassName={s.activeLink}>{props.img} {props.name} </NavLink>
+             </div>
+-            {/*<div className={s.messageBorder}></div>*/}
+         </div>
+ 
+     );
+diff --git a/src/components/Dialogs/Dialogs.jsx b/src/components/Dialogs/Dialogs.jsx
+index 8958139..c26cde4 100644
+--- a/src/components/Dialogs/Dialogs.jsx
++++ b/src/components/Dialogs/Dialogs.jsx
+@@ -6,17 +6,19 @@ import Message from "./Message/Message";
+ 
+ const Dialogs = (props) => {
+ 
++    let state = props.dialogsPage;
+ 
+-    let dialogsElements = props.state.dialogs.map(d => <DialogItem img={d.img} name={d.name} id={d.id}/>);
+-    let messagesElements = props.state.messages.map(m => <Message img={m.img} textMessage={m.textMessage}/>);
++    let dialogsElements = state.dialogs.map(d => <DialogItem img={d.img} name={d.name} key={d.id} id={d.id}/>);
++    let messagesElements = state.messages.map(m => <Message img={m.img} key={m.id} body={m.textMessage}/>);
++    let newMessageBody = state.newMessageBody;
+ 
+-    let newMessageElement = React.createRef();
+-
+-    let addMessage = () => {
+-        let text = newMessageElement.current.value;
+-        props.addMessage(text);
+-        newMessageElement.current.value = '';
+-    }
++    let onSendMessageClick = () => {
++        props.sendMessage();
++    };
++    let onNewMessageChange = (e) => {
++        let body = e.target.value;
++        props.updateNewMessageBody(body);
++    };
+ 
+     return (
+         <div className={s.dialogs}>
+@@ -26,12 +28,62 @@ const Dialogs = (props) => {
+             <div className={s.messages}>
+                 {messagesElements}
+                 <div>
+-                    <textarea ref={newMessageElement} className={s.messageInput} id="" cols="30" rows="5"/>
+-                    <button onClick={addMessage} className={s.sendMessage}>Отправить сообщение</button>
++                    <textarea  className={s.messageInput}
++                               value={newMessageBody}
++                               onChange={onNewMessageChange}
++                               placeholder='Enter your message' id="" cols="30" rows="5"/>
++                    <button onClick={onSendMessageClick} className={s.sendMessage}>Отправить сообщение</button>
+                 </div>
+             </div>
+         </div>
+     );
+ }
+ 
+-export default Dialogs;
+\ No newline at end of file
++
++export default Dialogs;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++// const Dialogs = (props) => {
++//
++//
++//     let dialogsElements = props.store.dialogs.map(d => <DialogItem img={d.img} name={d.name} id={d.id}/>);
++//     let messagesElements = props.store.messages.map(m => <Message img={m.img} textMessage={m.textMessage}/>);
++//
++//     let newMessageElement = React.createRef();
++//
++//     let addMessage = () => {
++//         let text = newMessageElement.current.value;
++//         props.addMessage(text);
++//         newMessageElement.current.value = '';
++//     }
++//
++//     return (
++//         <div className={s.dialogs}>
++//             <div className={s.dialogItems}>
++//                 {dialogsElements}
++//             </div>
++//             <div className={s.messages}>
++//                 {messagesElements}
++//                 <div>
++//                     <textarea ref={newMessageElement} className={s.messageInput} id="" cols="30" rows="5"/>
++//                     <button onClick={addMessage} className={s.sendMessage}>Отправить сообщение</button>
++//                 </div>
++//             </div>
++//         </div>
++//     );
++// }
++//
++// export default Dialogs;
+\ No newline at end of file
+diff --git a/src/components/Dialogs/Dialogs.module.css b/src/components/Dialogs/Dialogs.module.css
+index 6e230b9..0f5e979 100644
+--- a/src/components/Dialogs/Dialogs.module.css
++++ b/src/components/Dialogs/Dialogs.module.css
+@@ -1,13 +1,12 @@
+ .dialogs {
+     display: grid;
+     grid-template-columns: 2fr 10fr;
+-
++    min-height: 100%;
+ }
+ .dialogItems {
+     padding: 10px;
+     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+     margin-right: 20px;
+-    height: 100vh;
+ }
+ .dialogItems img {
+     width: 30px;
+@@ -45,9 +44,9 @@
+     display: block;
+     padding: 10px;
+     align-items: start;
+-
+ }
+ .message {
++    display: block;
+     color: #2B2B2B;
+     font-weight: 500;
+     font-size: 20px;
+@@ -57,7 +56,10 @@
+     border-radius: 10px;
+     background-color:rgba(204,228,247,0.9);
+     padding: 10px;
++    word-wrap: break-word
++
+ }
++
+ .message:nth-child(2n+1) {
+ 
+ }
+@@ -76,6 +78,7 @@
+ .messageInput {
+     margin-top: 20px;
+     width: 378px;
++    max-width: 378px;
+ }
+ .sendMessage {
+     width: 400px;
+diff --git a/src/components/Dialogs/Message/DialogsContainer.jsx b/src/components/Dialogs/Message/DialogsContainer.jsx
+new file mode 100644
+index 0000000..8bf214d
+--- /dev/null
++++ b/src/components/Dialogs/Message/DialogsContainer.jsx
+@@ -0,0 +1,94 @@
++import Dialogs from "../Dialogs";
++import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../redux/dialogs-reducer";
++
++import {connect} from "react-redux";
++
++
++
++let mapStateToProps = (state) => {
++    return {
++        dialogsPage: state.dialogsPage
++    }
++};
++let mapDispatchToProps = (dispatch) => {
++    return {
++        updateNewMessageBody: (body) => {
++            dispatch(updateNewMessageBodyCreator(body));
++        },
++        sendMessage: () => {
++            dispatch(sendMessageCreator());
++        }
++    }
++};
++
++const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs);
++
++
++
++
++export default DialogsContainer;
++
++
++
++
++
++
++
++
++
++
++
++// const DialogsContainer = () => {
++//
++//
++//     return <StoreContext.Consumer>
++//         {
++//             store => {
++//                 let state = store.getState().dialogsPage;
++//
++//                 let onSendMessageClick = () => {
++//                     store.dispatch(sendMessageCreator());
++//                 };
++//                 let onNewMessageChange = (body) => {
++//                     store.dispatch(updateNewMessageBodyCreator(body));
++//                 };
++//                 return <Dialogs updateNewMessageBody={onNewMessageChange}
++//                                 sendMessage={onSendMessageClick}
++//                                 dialogsPage={state}/>}
++//         }
++//     </StoreContext.Consumer>
++// };
++
++
++
++// const Dialogs = (props) => {
++//
++//
++//     let dialogsElements = props.store.dialogs.map(d => <DialogItem img={d.img} name={d.name} id={d.id}/>);
++//     let messagesElements = props.store.messages.map(m => <Message img={m.img} textMessage={m.textMessage}/>);
++//
++//     let newMessageElement = React.createRef();
++//
++//     let addMessage = () => {
++//         let text = newMessageElement.current.value;
++//         props.addMessage(text);
++//         newMessageElement.current.value = '';
++//     }
++//
++//     return (
++//         <div className={s.dialogs}>
++//             <div className={s.dialogItems}>
++//                 {dialogsElements}
++//             </div>
++//             <div className={s.messages}>
++//                 {messagesElements}
++//                 <div>
++//                     <textarea ref={newMessageElement} className={s.messageInput} id="" cols="30" rows="5"/>
++//                     <button onClick={addMessage} className={s.sendMessage}>Отправить сообщение</button>
++//                 </div>
++//             </div>
++//         </div>
++//     );
++// }
++//
++// export default Dialogs;
+\ No newline at end of file
+diff --git a/src/components/Dialogs/Message/Message.jsx b/src/components/Dialogs/Message/Message.jsx
+index 7f3a55b..a2d0395 100644
+--- a/src/components/Dialogs/Message/Message.jsx
++++ b/src/components/Dialogs/Message/Message.jsx
+@@ -4,8 +4,8 @@ import s from './../Dialogs.module.css'
+ const Message = (props) => {
+ 
+     return (
+-        <div className={s.message}>
+-            {props.img} {props.textMessage}
++        <div className={s.message} >
++            {props.img} <p>{props.body}</p>
+         </div>
+     );
+ }
+diff --git a/src/components/Navbar/Navbar.jsx b/src/components/Navbar/Navbar.jsx
+index 82c4f8d..c3fbf70 100644
+--- a/src/components/Navbar/Navbar.jsx
++++ b/src/components/Navbar/Navbar.jsx
+@@ -1,13 +1,13 @@
+ import React from "react";
+ import s from './Navbar.module.css';
+ import {NavLink} from "react-router-dom";
+-import NavbarFriends from "./NavbarFriends/NavbarFriends";
++// import NavbarFriends from "./NavbarFriends/NavbarFriends";
+ 
+ 
+ 
+ const Navbar = (props) => {
+ 
+-    let NavbarElements = props.state.navbarFriends.map(d => <NavbarFriends img={d.img} name={d.name}/>)
++    // let NavbarElements = props.state.navbarFriends.map(d => <NavbarFriends img={d.img} name={d.name}/>)
+ 
+     return (
+         <nav className={s.nav}>
+@@ -21,13 +21,13 @@ const Navbar = (props) => {
+                 <NavLink to="/news/" activeClassName={s.activeLink}>News</NavLink>
+             </div>
+             <div className={s.item}>
+-                <NavLink to="#">Music</NavLink>
++                <NavLink to="/music/" activeClassName={s.activeLink}>Music</NavLink>
+             </div>
+             <div className={`${s.item} ${s.friends}`}>
+-                <NavLink to="#">Friends</NavLink>
++                <NavLink to="/users/" activeClassName={s.activeLink}>Friends</NavLink>
+             </div>
+             <div>
+-                {NavbarElements}
++                {/*{NavbarElements}*/}
+             </div>
+         </nav>
+     );
+diff --git a/src/components/Navbar/Navbar.module.css b/src/components/Navbar/Navbar.module.css
+index ec99ba2..dd2a7a8 100644
+--- a/src/components/Navbar/Navbar.module.css
++++ b/src/components/Navbar/Navbar.module.css
+@@ -3,7 +3,7 @@ a {
+ }
+ .nav {
+     grid-area: n;
+-    background-color: rgba(0,128,128,0.6);
++    background-color: rgba(0,128,128,0.5);
+     padding-top: 20px;
+ }
+ .item {
+diff --git a/src/components/News/News.jsx b/src/components/News/News.jsx
+index 018825c..6691997 100644
+--- a/src/components/News/News.jsx
++++ b/src/components/News/News.jsx
+@@ -1,20 +1,32 @@
+ import React from "react";
+ import s from './News.module.css'
+-import NewsItem from "./NewsItem/NewsItem";
+-
+ 
+ 
+ const News = (props) => {
+-
+-    let newsElements = props.state.news.map(n => <NewsItem textNews={n.textNews}/>);
++    debugger
++    if (props.news.length === 0) {
++        props.setNews([
++            {id: 1, textNews: "В России хотят изменить правила медосвидетельствования для водителей"},
++            {id: 2, textNews: "«Норникель» ликвидирует последствия ЧП в Норильске за свой счет"},
++            {id: 3, textNews: "МИД РФ ответил на высылку российских дипломатов из Чехии"},
++            {id: 4, textNews: "Минюст признал введенные из-за коронавируса меры обоснованными"},
++            {id: 5, textNews: "Путин призвал стремиться к быстрому выходу из режима ограничений"},
++            {id: 6, textNews: "Путин поручил правительству создать базу генетической информации"}
++        ]);
++    }
+ 
+     return (
+-        <div>
+-            <div className={s.newsPage}>
+-                <div className={s.item}>
+-                    {newsElements}
+-                </div>
+-            </div>
++        <div className={s.newsPage}>
++
++            {
++                props.news.map(n =><div key={n.id}>
++                    <div className={s.item}>
++                        {n.id} {n.textNews}
++                    </div>
++
++            </div>)
++
++            }
+         </div>
+     );
+ }
+diff --git a/src/components/News/NewsContainer.jsx b/src/components/News/NewsContainer.jsx
+new file mode 100644
+index 0000000..86f5ae5
+--- /dev/null
++++ b/src/components/News/NewsContainer.jsx
+@@ -0,0 +1,18 @@
++import {connect} from "react-redux";
++import News from "./News";
++import {setNewsAC} from "../../redux/news-reduser";
++
++let mapStateToProps = (state) => {
++    return {
++        news: state.newsPage.news
++    }
++};
++let mapDispatchToProps = (dispatch) => {
++    return {
++        setNews: (news) => {
++            dispatch(setNewsAC(news));
++        }
++    }
++};
++
++export default connect(mapStateToProps, mapDispatchToProps)(News);
+\ No newline at end of file
+diff --git a/src/components/News/NewsItem/NewsItem.jsx b/src/components/News/NewsItem/NewsItem.jsx
+deleted file mode 100644
+index 1d5a544..0000000
+--- a/src/components/News/NewsItem/NewsItem.jsx
++++ /dev/null
+@@ -1,16 +0,0 @@
+-import React from "react";
+-import s from './NewsItem.module.css'
+-
+-
+-const News = (props) => {
+-
+-    return (
+-        <div>
+-            <div className={s.item}>
+-                {props.textNews}
+-            </div>
+-        </div>
+-    );
+-}
+-
+-export default News;
+\ No newline at end of file
+diff --git a/src/components/News/NewsItem/NewsItem.module.css b/src/components/News/NewsItem/NewsItem.module.css
+deleted file mode 100644
+index b815c5e..0000000
+--- a/src/components/News/NewsItem/NewsItem.module.css
++++ /dev/null
+@@ -1,7 +0,0 @@
+-.newsPage {
+-    color: beige;
+-    padding: 30px;
+-}
+-.item {
+-    margin-bottom: 20px;
+-}
+diff --git a/src/components/Profile/MyMusic/Music.jsx b/src/components/Profile/MyMusic/Music.jsx
+new file mode 100644
+index 0000000..155a680
+--- /dev/null
++++ b/src/components/Profile/MyMusic/Music.jsx
+@@ -0,0 +1,51 @@
++import React from "react";
++import s from './Music.module.css'
++
++
++
++const Music = (props) => {
++
++    if (props.music.length === 0) {
++        props.setMusic([
++            {id: 1, artist: "AlisA", song: "bla-bla-bla"},
++            {id: 2, artist: "BG", song: "bla-bla-bla"},
++            {id: 3, artist: "DDT", song: "bla-bla-bla"},
++            {id: 4, artist: "KISH", song: "bla-bla-bla"},
++            {id: 5, artist: "Melnitsa", song: "bla-bla-bla"},
++            {id: 6, artist: "Fleur", song: "bla-bla-bla"}
++        ]);
++    }
++
++    return (
++        <div className={s.musicPage}>
++
++            {
++                props.music.map(n =><div key={n.id}>
++                    <div className={s.item}>
++                        <div className={s.musicStroke}>
++                            <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-caret-right-square-fill"
++                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
++                                <path fill-rule="evenodd"
++                                      d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
++                            </svg>
++                        </div>
++                        <div className={s.musicStroke}>{n.id}</div>
++                        <div className={s.musicStroke}>{n.artist} /</div>
++                        <div className={s.musicStroke}>{n.song} /</div>
++                        <div className={s.musicStroke}>
++                            <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-arrow-down-circle-fill"
++                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
++                                <path fill-rule="evenodd"
++                                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
++                            </svg>
++                        </div>
++                    </div>
++
++            </div>)
++
++            }
++        </div>
++    );
++}
++
++export default Music;
+\ No newline at end of file
+diff --git a/src/components/Profile/MyMusic/Music.module.css b/src/components/Profile/MyMusic/Music.module.css
+new file mode 100644
+index 0000000..63cebce
+--- /dev/null
++++ b/src/components/Profile/MyMusic/Music.module.css
+@@ -0,0 +1,13 @@
++.musicPage {
++    color: #2B2B2B;
++    padding: 30px;
++    font-weight: 600;
++}
++.item {
++    margin-bottom: 20px;
++    display: flex;
++}
++.musicStroke {
++    margin-right: 20px;
++    cursor: pointer;
++}
+\ No newline at end of file
+diff --git a/src/components/Profile/MyMusic/MusicContainer.jsx b/src/components/Profile/MyMusic/MusicContainer.jsx
+new file mode 100644
+index 0000000..30bdc66
+--- /dev/null
++++ b/src/components/Profile/MyMusic/MusicContainer.jsx
+@@ -0,0 +1,20 @@
++import {connect} from "react-redux";
++
++import {setMusicAC} from "../../../redux/music-reduser";
++import Music from "./Music";
++
++let mapStateToProps = (state) => {
++    debugger
++    return {
++        music: state.musicPage.music
++    }
++};
++let mapDispatchToProps = (dispatch) => {
++    return {
++        setMusic: (music) => {
++            dispatch(setMusicAC(music));
++        }
++    }
++};
++
++export default connect(mapStateToProps, mapDispatchToProps)(Music);
+\ No newline at end of file
+diff --git a/src/components/Profile/MyPosts/MyPosts.jsx b/src/components/Profile/MyPosts/MyPosts.jsx
+index 6c33373..7c393df 100644
+--- a/src/components/Profile/MyPosts/MyPosts.jsx
++++ b/src/components/Profile/MyPosts/MyPosts.jsx
+@@ -1,24 +1,28 @@
+ import React from "react";
+ import s from './MyPosts.module.css';
+ import Post from "./Post/Post";
+-import {addPostActionCreator, updateNewPostTextPostActionCreator} from "../../../redux/state";
+ 
+ 
+ 
+ 
+ const MyPosts = (props) => {
+ 
+-    let postsElements = props.posts.map(p => <Post message={p.message} likes={p.likes}/>);
++    let postsElements = props.posts.map(p => <Post message={p.message} key={p.id} likes={p.likes}/>);
+     let newPostElement = React.createRef();
+ 
+-    let addPost = () => {
+-        props.dispatch(addPostActionCreator());
+-    }
++    let onAddPost = () => {
++        props.addPost()
++
++    };
++
++    let onClearPost = () => {
++        props.clearPost()
++    };
++
+     let onPostChange = () => {
+         let text = newPostElement.current.value;
+-        let action = updateNewPostTextPostActionCreator(text);
+-        props.dispatch(action);
+-    }
++        props.updateNewPostText(text)
++    };
+ 
+     return (
+     <div className={s.wall}>
+@@ -30,11 +34,11 @@ const MyPosts = (props) => {
+                 <textarea ref={newPostElement}
+                           onChange={onPostChange}
+                           value={props.newPostText}
+-                          cols="30" rows="5"/>
++                          cols="30" rows="5" placeholder="Введите текст" />
+             </div>
+             <div>
+-                <button onClick={addPost}>Add post</button>
+-                <button onClick={props.clearPost}>Remove</button>
++                <button onClick={onAddPost}>Add post</button>
++                <button onClick={onClearPost}>Remove</button>
+             </div>
+         </div>
+         <div>
+diff --git a/src/components/Profile/MyPosts/Post/MyPostsContainer.jsx b/src/components/Profile/MyPosts/Post/MyPostsContainer.jsx
+new file mode 100644
+index 0000000..60f6ee0
+--- /dev/null
++++ b/src/components/Profile/MyPosts/Post/MyPostsContainer.jsx
+@@ -0,0 +1,76 @@
++import MyPosts from "../MyPosts";
++import {
++    addPostActionCreator,
++    clearPostCreator,
++    updateNewPostTextPostActionCreator
++} from "../../../../redux/profile-reduser";
++
++import {connect} from "react-redux";
++
++
++
++const mapStateToProps = (state) => {
++    return {
++        posts: state.profilePage.posts,
++        newPostText: state.profilePage.newPostText
++    }
++};
++const mapDispatchToProps = (dispatch) => {
++    return {
++        addPost: () => {
++            dispatch(addPostActionCreator());
++        },
++        clearPost: () => {
++            dispatch(clearPostCreator())
++        },
++        updateNewPostText: (text) => {
++            let action = updateNewPostTextPostActionCreator(text);
++            dispatch(action);
++        }
++    }
++};
++
++const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts);
++
++export default MyPostsContainer;
++
++
++
++
++
++
++
++
++
++
++
++// const MyPostsContainer = () => {
++//
++//
++//     return <StoreContext.Consumer>
++//         { store => {
++//                     let state = store.getState();
++//
++//                     let addPost = () => {
++//                         store.dispatch(addPostActionCreator());
++//                     };
++//
++//                     let clearPost = () => {
++//                         store.dispatch(clearPostCreator())
++//                     };
++//
++//                     let onPostChange = (text) => {
++//                         let action = updateNewPostTextPostActionCreator(text);
++//                         store.dispatch(action);
++//                     };
++//
++//                     return <MyPosts updateNewPostText={onPostChange}
++//                                     addPost={addPost}
++//                                     posts={state.profilePage.posts}
++//                                     newPostText={state.profilePage.newPostText}
++//                                     clearPost={clearPost}/>
++//                 }
++//         }
++//         </StoreContext.Consumer>
++//
++// };
+\ No newline at end of file
+diff --git a/src/components/Profile/MyPosts/Post/Post.module.css b/src/components/Profile/MyPosts/Post/Post.module.css
+index d4da022..c9eeb3a 100644
+--- a/src/components/Profile/MyPosts/Post/Post.module.css
++++ b/src/components/Profile/MyPosts/Post/Post.module.css
+@@ -52,6 +52,7 @@
+     border-radius: 10px;
+     background-color:rgba(204,228,247,0.9);
+     padding: 10px;
++    word-wrap: break-word;
+ }
+ .postBorder {
+     border: 1px solid rgba(204,228,247,0.1);
+diff --git a/src/components/Profile/Profile.jsx b/src/components/Profile/Profile.jsx
+index 1844ea3..9fb5ba0 100644
+--- a/src/components/Profile/Profile.jsx
++++ b/src/components/Profile/Profile.jsx
+@@ -1,6 +1,6 @@
+ import React from "react";
+-import MyPosts from "./MyPosts/MyPosts";
+ import ProfileInfo from "./ProfileInfo/ProfileInfo";
++import MyPostsContainer from "./MyPosts/Post/MyPostsContainer";
+ 
+ 
+ const Profile = (props) => {
+@@ -8,14 +8,11 @@ const Profile = (props) => {
+     return (
+         <div>
+             <ProfileInfo/>
+-            <MyPosts posts={props.profilePage.posts}
+-                     newPostText={props.profilePage.newPostText}
+-                     clearPost={props.clearPost}
+-                     dispatch={props.dispatch} />
++            <MyPostsContainer />
+         </div>
+     );
+ 
+-}
++};
+ 
+ 
+ export default Profile;
+diff --git a/src/components/Users/UsersAPIComponent.jsx b/src/components/Users/UsersAPIComponent.jsx
+new file mode 100644
+index 0000000..a7bbabe
+--- /dev/null
++++ b/src/components/Users/UsersAPIComponent.jsx
+@@ -0,0 +1,43 @@
++import React from "react";
++import styles from './users.module.css'
++import * as axios from "axios";
++import unnamed from '../../files/unnamed.jpg'
++
++
++class Users extends React.Component {
++
++    componentDidMount() {
++        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
++            this.props.setUsers(response.data.items);
++        });
++    }
++
++    render() {
++        return (
++            <div className={styles.bodyUsers}>
++                {
++                    this.props.users.map(u => <div key={u.id}>
++                   <span>
++                       <div>
++                           <img src={u.photos.small != null ? u.photos.small : unnamed} className={styles.photo} />
++                       </div>
++                       <div>
++                           {u.followed ?
++                               <button className={styles.unfollow} onClick={()=>{this.props.unfollow(u.id)}}>Unfollow</button> :
++                               <button className={styles.follow} onClick={()=>{this.props.follow(u.id)}}>Follow</button>}
++                       </div>
++                   </span>
++                        <span>
++                       <span><div>{u.name}</div><div>{u.status}</div></span>
++                       <span><div>{"u.location.country"}</div><div>{"u.location.city"}</div></span>
++                   </span>
++
++                    </div>)
++                }
++            </div>
++        );
++    }
++}
++
++
++export default Users;
+\ No newline at end of file
+diff --git a/src/components/Users/ExperimentalContainer.jsx b/src/components/Users/ExperimentalContainer.jsx
+new file mode 100644
+index 0000000..49cba30
+--- /dev/null
++++ b/src/components/Users/ExperimentalContainer.jsx
+@@ -0,0 +1,24 @@
++import {connect} from "react-redux";
++import Users from "./Users";
++import {followAC, setUsersAC, unfollowAC} from "../../redux/users-reduser";
++
++let mapStateToProps = (state) => {
++    return {
++        users: state.usersPage.users
++    }
++};
++let mapDispatchToProps = (dispatch) => {
++    return {
++        follow: (userId) => {
++            dispatch(followAC(userId))
++        },
++        unfollow: (userId) => {
++            dispatch(unfollowAC(userId))
++        },
++        setUsers: (users) => {
++            dispatch(setUsersAC(users))
++        }
++    }
++};
++
++export default connect(mapStateToProps, mapDispatchToProps)(Users);
+\ No newline at end of file
+diff --git a/src/components/Users/users.module.css b/src/components/Users/users.module.css
+new file mode 100644
+index 0000000..324908e
+--- /dev/null
++++ b/src/components/Users/users.module.css
+@@ -0,0 +1,18 @@
++.photo {
++    height: 140px;
++    width: 140px;
++    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
++    border-radius: 50%;
++    padding: 5px;
++}
++.bodyUsers {
++    margin: 20px 20px;
++}
++.follow {
++    background: skyblue;
++    width: 150px;
++}
++.unfollow {
++    background: antiquewhite;
++    width: 150px;
++}
+\ No newline at end of file
+diff --git a/src/files/handman.png b/src/files/handman.png
+new file mode 100644
+index 0000000..5ac7aba
+Binary files /dev/null and b/src/files/handman.png differ
+diff --git a/src/files/unnamed.jpg b/src/files/unnamed.jpg
+new file mode 100644
+index 0000000..b29a0d4
+Binary files /dev/null and b/src/files/unnamed.jpg differ
+diff --git a/src/index.js b/src/index.js
+index ee89e1d..263d833 100644
+--- a/src/index.js
++++ b/src/index.js
+@@ -1,28 +1,24 @@
+-import store from "./redux/state";
++import store from "./redux/redux-store";
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import './index.css';
+ import App from './App';
+ import * as serviceWorker from './serviceWorker';
+ import {BrowserRouter} from "react-router-dom";
++import {Provider} from "react-redux";
+ 
+ 
++ReactDOM.render(
++    <BrowserRouter>
++        <Provider store={store}>
++            <App />
++        </Provider>
++    </BrowserRouter>,
++    document.getElementById('root'));
++
+ 
+-let rerenderEntireTree = (state) => {
+-    ReactDOM.render(
+-        <BrowserRouter>
+-            <App state={state}
+-                 dispatch={store.dispatch.bind(store)}
+-                 clearPost={store.clearPost.bind(store)}
+-                 addMessage={store.addMessage.bind(store)}
+-                 />
+-        </BrowserRouter>,
+-        document.getElementById('root'));
+-}
+ 
+-rerenderEntireTree(store.getState());
+ 
+-store.subscribe(rerenderEntireTree);
+ 
+ // If you want your app to work offline and load faster, you can change
+ // unregister() to register() below. Note this comes with some pitfalls.
+diff --git a/src/logo.png b/src/logo.png
+deleted file mode 100644
+index da9d322..0000000
+Binary files a/src/logo.png and /dev/null differ
+diff --git a/src/logo.svg b/src/logo.svg
+deleted file mode 100644
+index 6b60c10..0000000
+--- a/src/logo.svg
++++ /dev/null
+@@ -1,7 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+-    <g fill="#61DAFB">
+-        <path d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"/>
+-        <circle cx="420.9" cy="296.5" r="45.7"/>
+-        <path d="M520.5 78.1z"/>
+-    </g>
+-</svg>
+diff --git a/src/redux/dialogs-reducer.js b/src/redux/dialogs-reducer.js
+new file mode 100644
+index 0000000..df263df
+--- /dev/null
++++ b/src/redux/dialogs-reducer.js
+@@ -0,0 +1,70 @@
++import React from "react";
++
++const SEND_MESSAGE = 'SEND_MESSAGE';
++const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
++
++let initialState = {
++    dialogs: [
++        {id: 1, name: 'Tatyana', img:<img
++                src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                alt=""/>},
++        {id: 2, name: 'Nikolay', img:<img
++                src="https://i.pinimg.com/originals/9f/f9/12/9ff912d0bd2a5d432e41c6126d688180.png"
++                alt=""/>},
++        {id: 3, name: 'Sveta', img:<img
++                src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
++                alt=""/>},
++        {id: 4, name: 'Oleg', img:<img
++                src="https://c.wallhere.com/photos/db/26/Dalai_Lama_Buddhism_men_portrait_display_monochrome_face_portrait_glasses-50537.png!d"
++                alt=""/>},
++    ],
++    messages: [
++        {id: 1, textMessage: 'Hello, people!', img:<img
++                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
++                alt=""/>},
++        {id: 2, textMessage: 'Hello, Bessonniy11!', img:<img
++                src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                alt=""/>},
++        {id: 3, textMessage: 'How are your?', img:<img
++                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
++                alt=""/>},
++        {id: 4, textMessage: 'Thinks, I very good!', img:<img
++                src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                alt=""/>},
++    ],
++    newMessageBody: ''
++};
++
++
++const dialogsReducer = (state = initialState, action) => {
++
++    switch (action.type) {
++        case UPDATE_NEW_MESSAGE_BODY:
++            return {
++                ...state,
++                newMessageBody: action.body
++            };
++        case SEND_MESSAGE:
++            let newMessage = {
++                id:5,
++                textMessage: state.newMessageBody,
++                img: <img
++                    src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
++                    alt=""/>
++            };
++            return {
++                ...state,
++                newMessageBody: '',
++                messages: [...state.messages, newMessage]
++            };
++        default:
++            return state ;
++    }
++};
++
++export const sendMessageCreator = () =>
++    ({type: SEND_MESSAGE});
++export const updateNewMessageBodyCreator = (body) =>
++    ({ type: UPDATE_NEW_MESSAGE_BODY, body: body});
++
++export default dialogsReducer;
+\ No newline at end of file
+diff --git a/src/redux/music-reduser.js b/src/redux/music-reduser.js
+new file mode 100644
+index 0000000..8bfd597
+--- /dev/null
++++ b/src/redux/music-reduser.js
+@@ -0,0 +1,24 @@
++const SET_MUSIC = 'SET_MUSIC';
++
++
++let initialState = {
++    music: []
++};
++
++const musicReducer = (state = initialState, action) => {
++    switch (action.type) {
++        case SET_MUSIC: {
++            return {
++                ...state,
++                music: [...state.music, ...action.music]
++            }
++        }
++        default:
++            return state;
++    }
++};
++
++export const setMusicAC = (music) => ({type: SET_MUSIC, music});
++
++
++export default musicReducer;
+\ No newline at end of file
+diff --git a/src/redux/news-reduser.js b/src/redux/news-reduser.js
+new file mode 100644
+index 0000000..b67d03a
+--- /dev/null
++++ b/src/redux/news-reduser.js
+@@ -0,0 +1,24 @@
++const SET_NEWS = 'SET_NEWS';
++
++
++let initialState = {
++    news: []
++};
++
++const newsReducer = (state = initialState, action) => {
++    switch (action.type) {
++        case SET_NEWS: {
++            return {
++                ...state,
++                news: [...state.news, ...action.news]
++            }
++        }
++        default:
++            return state;
++    }
++};
++
++export const setNewsAC = (news) => ({type: SET_NEWS, news});
++
++
++export default newsReducer;
+\ No newline at end of file
+diff --git a/src/redux/profile-reduser.js b/src/redux/profile-reduser.js
+new file mode 100644
+index 0000000..42dbd5f
+--- /dev/null
++++ b/src/redux/profile-reduser.js
+@@ -0,0 +1,59 @@
++import React from "react";
++
++const ADD_POST = 'ADD_POST';
++const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
++const CLEAR_POST = 'CLEAR_POST';
++
++let initialState = {
++    posts: [
++        {id: 1, message: 'Hi, how are you?', likes: 9},
++        // {id: 2, message: 'It\'s my first post', likes: 12},
++        // {id: 3, message: 'Its really your first project?', likes: 7},
++        // {id: 4, message: 'Yes, of course', likes: 25}
++    ],
++        newPostText: '',
++};
++
++
++
++
++const profileReducer = (state = initialState, action) => {
++    switch (action.type) {
++        case ADD_POST:{
++            let newPost = {
++                id: 5,
++                message: state.newPostText,
++                likes: 0
++            };
++            return {
++                ...state,
++                posts: [newPost, ...state.posts],
++                newPostText: ''
++            };
++        }
++        case UPDATE_NEW_POST_TEXT:{
++            return {
++                ...state,
++                newPostText: action.newText
++            };
++        }
++        case CLEAR_POST:{
++            return {
++                ...state,
++                newPostText: ''
++            };
++        }
++        default:
++            return state;
++
++    }
++};
++
++export const addPostActionCreator = () =>
++    ({type: ADD_POST});
++export const clearPostCreator = () =>
++    ({type: CLEAR_POST});
++export const updateNewPostTextPostActionCreator = (text) =>
++    ({ type: UPDATE_NEW_POST_TEXT, newText: text});
++
++export default profileReducer;
+\ No newline at end of file
+diff --git a/src/redux/redux-store.js b/src/redux/redux-store.js
+new file mode 100644
+index 0000000..c1fb590
+--- /dev/null
++++ b/src/redux/redux-store.js
+@@ -0,0 +1,24 @@
++import {combineReducers, createStore} from "redux";
++import profileReducer from "./profile-reduser";
++import dialogsReducer from "./dialogs-reducer";
++import sidebarReducer from "./sidebar-reduser";
++import usersReducer from "./users-reduser";
++import newsReducer from "./news-reduser";
++import musicReducer from "./music-reduser";
++
++let reducers = combineReducers({
++    profilePage: profileReducer,
++    dialogsPage: dialogsReducer,
++    sidebar: sidebarReducer,
++    usersPage: usersReducer,
++    newsPage: newsReducer,
++    musicPage: musicReducer
++});
++
++
++
++let store = createStore(reducers);
++
++
++
++export default store;
+\ No newline at end of file
+diff --git a/src/redux/sidebar-reducer.js b/src/redux/sidebar-reducer.js
+new file mode 100644
+index 0000000..3a53e8d
+--- /dev/null
++++ b/src/redux/sidebar-reducer.js
+@@ -0,0 +1,10 @@
++
++let initialState = {}
++
++const sidebarReducer = (state = initialState, action) => {
++
++
++    return state
++};
++
++export default sidebarReducer;
+\ No newline at end of file
+diff --git a/src/redux/state.js b/src/redux/state.js
+deleted file mode 100644
+index 374351f..0000000
+--- a/src/redux/state.js
++++ /dev/null
+@@ -1,124 +0,0 @@
+-import React from "react";
+-
+-const ADD_POST = 'ADD_POST';
+-const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
+-
+-
+-let store = {
+-    _state: {
+-        profilePage: {
+-            posts: [
+-                {id: 1, message: 'Hi, how are you?', likes: 9},
+-                // {id: 2, message: 'It\'s my first post', likes: 12},
+-                // {id: 3, message: 'Its really your first project?', likes: 7},
+-                // {id: 4, message: 'Yes, of course', likes: 25}
+-            ],
+-            newPostText: ''
+-        },
+-        navbarFriends: [
+-            {id: 2, name: 'Nikolay', img:<img
+-                    src="https://i.pinimg.com/originals/9f/f9/12/9ff912d0bd2a5d432e41c6126d688180.png"
+-                    alt=""/>},
+-            {id: 3, name: 'Tatyana', img:<img
+-                    src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
+-                    alt=""/>},
+-            {id: 4, name: 'Sveta', img:<img
+-                    src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
+-                    alt=""/>},
+-            {id: 5, name: 'Oleg', img:<img
+-                    src="https://c.wallhere.com/photos/db/26/Dalai_Lama_Buddhism_men_portrait_display_monochrome_face_portrait_glasses-50537.png!d"
+-                    alt=""/>},
+-        ],
+-
+-        dialogsPage: {
+-            dialogs: [
+-                {id: 1, name: 'Tatyana', img:<img
+-                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
+-                        alt=""/>},
+-                {id: 2, name: 'Nikolay', img:<img
+-                        src="https://i.pinimg.com/originals/9f/f9/12/9ff912d0bd2a5d432e41c6126d688180.png"
+-                        alt=""/>},
+-                {id: 3, name: 'Sveta', img:<img
+-                        src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
+-                        alt=""/>},
+-                {id: 4, name: 'Oleg', img:<img
+-                        src="https://c.wallhere.com/photos/db/26/Dalai_Lama_Buddhism_men_portrait_display_monochrome_face_portrait_glasses-50537.png!d"
+-                        alt=""/>},
+-            ],
+-            messages: [
+-                {id: 1, textMessage: 'Hello, people!', img:<img
+-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
+-                        alt=""/>},
+-                {id: 2, textMessage: 'Hello, Bessonniy11!', img:<img
+-                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
+-                        alt=""/>},
+-                {id: 3, textMessage: 'How are your?', img:<img
+-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
+-                        alt=""/>},
+-                {id: 4, textMessage: 'Thinks, I very good!', img:<img
+-                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
+-                        alt=""/>},
+-            ]
+-
+-        },
+-        newsPage: {
+-            news: [
+-                {id: 1, textNews: "В России хотят изменить правила медосвидетельствования для водителей"},
+-                {id: 2, textNews: "«Норникель» ликвидирует последствия ЧП в Норильске за свой счет"},
+-                {id: 3, textNews: "МИД РФ ответил на высылку российских дипломатов из Чехии"},
+-                {id: 3, textNews: "Минюст признал введенные из-за коронавируса меры обоснованными"},
+-                {id: 3, textNews: "Путин призвал стремиться к быстрому выходу из режима ограничений"},
+-                {id: 3, textNews: "Путин поручил правительству создать базу генетической информации"}
+-            ]
+-        }
+-
+-    }, //хранилище даных
+-    _callSubscriber(){
+-        console.log('State changed');
+-    },
+-
+-    getState() {
+-        return this._state;
+-    },
+-    subscribe(observer) {
+-        this._callSubscriber = observer; //наблюдатель
+-    },
+-    clearPost() { //функция удаления данных из поля ввода
+-        this._state.profilePage.newPostText = '';
+-        this._callSubscriber(this._state);
+-    },
+-    addMessage(textMessage) { //функция добавления сообщения
+-        let newMessage = {
+-            id: 5,
+-            textMessage: textMessage,
+-            img:<img
+-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
+-                alt=""/>
+-        };
+-        this._state.dialogsPage.messages.push(newMessage);
+-        this._callSubscriber(this._state);
+-    },
+-
+-    dispatch(action){ //{ type: 'ADD_POST' }
+-        if (action.type === ADD_POST) {
+-            let newPost = {
+-                id: 5,
+-                message: this._state.profilePage.newPostText,
+-                likes: 0
+-            };
+-            this._state.profilePage.posts.unshift(newPost);
+-            this._state.profilePage.newPostText = '';
+-            this._callSubscriber(this._state);
+-        }else if (action.type === UPDATE_NEW_POST_TEXT) {
+-                this._state.profilePage.newPostText = action.newText;
+-                this._callSubscriber(this._state);
+-            }
+-        }
+-}
+-export const addPostActionCreator = () => ({type: ADD_POST})
+-export const updateNewPostTextPostActionCreator = (text) =>
+-    ({ type: 'UPDATE_NEW_POST_TEXT', newText: text})
+-
+-
+-export default store;
+-window.store = store;
+\ No newline at end of file
+diff --git a/src/redux/store.js b/src/redux/store.js
+new file mode 100644
+index 0000000..b49175e
+--- /dev/null
++++ b/src/redux/store.js
+@@ -0,0 +1,103 @@
++import React from "react";
++import dialogsReducer from "./dialogs-reducer";
++import profileReducer from "./profile-reduser";
++import sidebarReducer from "./sidebar-reduser";
++
++
++let store = {
++    _state: {
++        profilePage: {
++            posts: [
++                {id: 1, message: 'Hi, how are you?', likes: 9},
++                // {id: 2, message: 'It\'s my first post', likes: 12},
++                // {id: 3, message: 'Its really your first project?', likes: 7},
++                // {id: 4, message: 'Yes, of course', likes: 25}
++            ],
++            newPostText: ''
++        },
++        navbarFriends: [
++            {id: 2, name: 'Nikolay', img:<img
++                    src="https://i.pinimg.com/originals/9f/f9/12/9ff912d0bd2a5d432e41c6126d688180.png"
++                    alt=""/>},
++            {id: 3, name: 'Tatyana', img:<img
++                    src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                    alt=""/>},
++            {id: 4, name: 'Sveta', img:<img
++                    src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
++                    alt=""/>},
++            {id: 5, name: 'Oleg', img:<img
++                    src="https://c.wallhere.com/photos/db/26/Dalai_Lama_Buddhism_men_portrait_display_monochrome_face_portrait_glasses-50537.png!d"
++                    alt=""/>},
++        ],
++
++        dialogsPage: {
++            dialogs: [
++                {id: 1, name: 'Tatyana', img:<img
++                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                        alt=""/>},
++                {id: 2, name: 'Nikolay', img:<img
++                        src="https://i.pinimg.com/originals/9f/f9/12/9ff912d0bd2a5d432e41c6126d688180.png"
++                        alt=""/>},
++                {id: 3, name: 'Sveta', img:<img
++                        src="https://avatars.mds.yandex.net/get-zen_doc/195350/pub_5cf37b2d0e1d9b00b010cbc9_5cf37b9da68d9100af4b7923/scale_1200"
++                        alt=""/>},
++                {id: 4, name: 'Oleg', img:<img
++                        src="https://c.wallhere.com/photos/db/26/Dalai_Lama_Buddhism_men_portrait_display_monochrome_face_portrait_glasses-50537.png!d"
++                        alt=""/>},
++            ],
++            messages: [
++                {id: 1, textMessage: 'Hello, people!', img:<img
++                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
++                        alt=""/>},
++                {id: 2, textMessage: 'Hello, Bessonniy11!', img:<img
++                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                        alt=""/>},
++                {id: 3, textMessage: 'How are your?', img:<img
++                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4N8MmlTqVNcvF69NxZxA8-IAuIM-dBFgdnik-ZK3hKWCK-mg&s"
++                        alt=""/>},
++                {id: 4, textMessage: 'Thinks, I very good!', img:<img
++                        src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5be0025c48efa800a9d32c88_5be003f9b54c0700aa9bb018/scale_1200"
++                        alt=""/>},
++            ],
++            newMessageBody: ''
++
++        },
++        newsPage: {
++            news: [
++                {id: 1, textNews: "В России хотят изменить правила медосвидетельствования для водителей"},
++                {id: 2, textNews: "«Норникель» ликвидирует последствия ЧП в Норильске за свой счет"},
++                {id: 3, textNews: "МИД РФ ответил на высылку российских дипломатов из Чехии"},
++                {id: 3, textNews: "Минюст признал введенные из-за коронавируса меры обоснованными"},
++                {id: 3, textNews: "Путин призвал стремиться к быстрому выходу из режима ограничений"},
++                {id: 3, textNews: "Путин поручил правительству создать базу генетической информации"}
++            ]
++        },
++        sidebar: {}
++
++    }, //хранилище даных
++    _callSubscriber(){
++        console.log('State changed');
++    },
++
++    getState() {
++        return this._state;
++    },
++    subscribe(observer) {
++        this._callSubscriber = observer; //наблюдатель
++    },
++    dispatch(action) {
++        this._state.profilePage = profileReducer(this._state.profilePage, action);
++        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
++        this._state.sidebar = sidebarReducer(this._state.sidebar, action);
++
++        this._callSubscriber(this._state);
++    }
++};
++
++
++
++
++
++
++export default store;
++window.store = store;
+\ No newline at end of file
+diff --git a/src/redux/users-reduser.js b/src/redux/users-reduser.js
+new file mode 100644
+index 0000000..86f47cb
+--- /dev/null
++++ b/src/redux/users-reduser.js
+@@ -0,0 +1,53 @@
++const FOLLOW = 'FOLLOW';
++const UNFOLLOW = 'UNFOLLOW';
++const SET_USERS = 'SET_USERS';
++
++
++let initialState = {
++    users: []
++};
++
++
++const usersReducer = (state = initialState, action) => {
++    switch (action.type) {
++        case FOLLOW:
++            return  {
++                ...state,
++                users: state.users.map(u => {
++                    if (u.id === action.userId){
++                       return {
++                           ...u,
++                           followed: true}
++                    }
++                    return u;
++                })
++            };
++        case UNFOLLOW:
++            return  {
++                ...state,
++                users: state.users.map(u => {
++                    if (u.id === action.userId){
++                        return {
++                            ...u,
++                            followed: false}
++                    }
++                    return u;
++                })
++            };
++        case SET_USERS: {
++            return {
++                ...state,
++                users: [...state.users, ...action.users]
++            }
++        }
++
++        default:
++            return state;
++    }
++};
++
++export const followAC = (userId) => ({type: FOLLOW, userId});
++export const unfollowAC = (userId) => ({type: UNFOLLOW, userId});
++export const setUsersAC = (users) => ({type: SET_USERS, users});
++
++export default usersReducer;
+\ No newline at end of file
