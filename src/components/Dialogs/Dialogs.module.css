@@ -1,0 +1,84 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    min-height: 100%;
+}
+.dialogItems {
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+    margin-right: 20px;
+}
+.dialogItems img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: -5px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
+.dialog {
+    width: 190px;
+    padding-left: 7px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    align-items: center;
+    display: block;
+
+}
+.dialog:hover {
+    background: rgba(80,129,184,0.9);
+    border-radius: 20px;
+    height: 30px;
+}
+.dialog a {
+    color: #2B2B2B;
+    font-weight: 500;
+    font-size: 20px;
+}
+.activeLink {
+    color: gold !important;
+}
+
+.messages {
+    width: 400px;
+    display: block;
+    padding: 60px;
+    align-items: start;
+}
+.message {
+    display: block;
+    color: #2B2B2B;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 255px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color:rgba(204,228,247,0.9);
+    padding: 10px;
+    word-wrap: break-word;
+    box-shadow: 1px 1px 4px 1px;
+}
+
+.message img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: -5px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
+.messageInput {
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.sendMessage {
+    width: 270px;
+}
+

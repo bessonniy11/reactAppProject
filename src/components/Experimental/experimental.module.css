@@ -1,0 +1,11 @@
+.body {
+    justify-content: center;
+    align-items: center;
+}
+.imgBody {
+    background-image: url("https://petzona.ru/wp-content/uploads/2018/12/1414941894_20.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 200% 200%;
+    height: calc(100vh - 60px);
+}

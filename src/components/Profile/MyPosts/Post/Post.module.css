@@ -1,0 +1,76 @@
+.item {
+    margin-top: 20px;
+    font-weight: 500;
+    display: flex;
+}
+.posts {
+
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
+.likeImg {
+    height: 35px;
+    width: 35px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+.likeImg img {
+    height: 30px;
+    width: 30px;
+    transition: .2s;
+    justify-content: center;
+    border-radius: 50%;
+}
+.likeImg img:hover {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.likesArea {
+    margin-top: 10px;
+    display: flex;
+}
+.likesArea span {
+    margin: auto 0;
+}
+.d5 {
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 25px solid rgba(204,228,247,0.9);
+    border-bottom: 10px solid transparent;
+}
+.postText {
+    width: 180px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color:rgba(204,228,247,0.9);
+    padding: 10px;
+    word-wrap: break-word;
+}
+.postBorder {
+    border: 1px solid rgba(204,228,247,0.1);
+    width: 235px;
+    margin-top: 10px;
+    margin-left: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+    border-radius: 5px;
+}
+
+.textarea {
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: -15px;
+    box-shadow: 1px 1px 4px 1px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}

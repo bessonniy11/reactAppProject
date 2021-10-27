@@ -1,0 +1,60 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    background-color: honeydew;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30%;
+    box-shadow: 1px 1px 5px 0px;
+}
+.button {
+    background-color: rgba(127,191,191,0.6);
+    width: 60px;
+    height: 50px;
+    transition: .6s;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+}
+.select {
+    background-color: rgba(127,191,191,0.4);
+    width: 80px;
+    height: 50px;
+    transition: .6s;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+}
+.button:hover {
+    cursor: pointer;
+    background: #66B3B3;
+    box-shadow: 1px 1px 5px 0px;
+}
+.select:hover {
+    cursor: pointer;
+    background: #66B3B3;
+    box-shadow: 1px 1px 5px 0px;
+}
+.table {
+    width: 300px;
+    justify-content: space-around;
+    text-align: center;
+    transition: .6s;
+}
+.day {
+    background-color: darkgray;
+    transition: .2s;
+}
+.day:hover {
+    background-color: #66B3B3;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px;
+}
+.today {
+    background-color: fuchsia;
+}

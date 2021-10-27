@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+}
+.nav {
+    grid-area: n;
+    background-color: rgba(0,128,128,0.5);
+}
+.item {
+    transition: 0.5s;
+    cursor: pointer;
+    width: 120px;
+    color: #2B2B2B;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 10px 15px;
+    padding: 5px 15px;
+}
+.item:hover {
+    background: rgba(0, 150, 160, .9);
+    border-radius: 20px;
+}
+
+.activeLink div {
+    color: gold;
+    background: rgba(0, 150, 160, .9);
+    border-radius: 20px;
+}
+.friends {
+    margin-top: 60px;
+}
+
+.friends a {
+    color: #2B2B2B;
+    font-size: 20px;
+}
+

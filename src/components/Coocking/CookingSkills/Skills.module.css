@@ -1,0 +1,158 @@
+.skills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    /*border: 3px solid darkblue;*/
+    /*justify-content: space-around;*/
+    /*background: rgba(0, 0, 0, 0.1);*/
+    overflow-y: scroll;
+    max-height: 70vh;
+    /*box-shadow: 1px 1px 2px 1px;*/
+    /*border-radius: 10px;*/
+}
+
+
+.skillsNone {
+    display: none;
+}
+.resultNon {
+    display: none;
+}
+.skillsBlock, .resultBlock {
+    margin: 30px 30px 30px 30px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.skillsBlockRandom {
+    display: flex;
+    justify-content: center;
+}
+
+.skillsImages {
+    height: 110px;
+}
+.skillsBlockImage {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    transition: 0.5s;
+}
+.skillsBlockImage:hover {
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+}
+.skillsBlockImage img {
+
+}
+
+.skillsBlockTitle {
+    box-shadow: 0 0 2px 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    max-height: 50px;
+    background: rgba(255, 255, 255, 0.8)
+}
+.skillsBlockInput {
+    box-shadow: 0 0 2px 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 80%;
+    max-height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border: none;
+}
+.skillsBlockText {
+    padding: 10px;
+    min-height: 80px;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+}
+.skillsBlockTextInput {
+    padding: 10px;
+    min-height: 80px;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+}
+.skillsBlock:hover {
+    background: rgba(295, 255, 255, 0.5);
+    box-shadow: 0 0 3px 1px;
+}
+
+.skillRedactor svg{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px;
+}
+.skillRedactor svg:hover {
+    height: 30px;
+    width: 30px;
+}
+.skillRedactor {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.svgBox {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+}
+
+::-webkit-scrollbar-track {
+    background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#56999f;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}

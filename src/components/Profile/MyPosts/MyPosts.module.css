@@ -1,0 +1,40 @@
+.nameTitle {
+    font-weight: bold;
+}
+.wall {
+    margin: 10px;
+    color: #2B2B2B;
+
+}
+.newpost {
+    letter-spacing: 0.2em;
+    font-size: 20px;
+}
+.textarea {
+    width: 265px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    word-wrap: break-word;
+}
+/*.textarea:hover {*/
+/*    box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.66);*/
+/*}*/
+button {
+    height: 30px;
+    width: 138px;
+    transition: .6s;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px 1px;
+    margin: 5px;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 1px;
+    background: #66B3B3;
+}

@@ -1,0 +1,117 @@
+.bg {
+    background-image: url("https://i.pinimg.com/originals/3a/2e/db/3a2edb064b3bf20a0461276d94ac8b2e.png");
+    height: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.what {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textWhat {
+    /*margin: 5px;*/
+}
+.cub img {
+    width: 45px;
+    height: 35px;
+    margin-top: 5px;
+}
+.buttons {
+    align-items: center;
+    /*justify-content: space-around;*/
+    /*padding: 50px 150px;*/
+    display: flex;
+    justify-content: center;
+}
+button:focus {
+    outline: none;
+}
+.buttons button  {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    border-radius: 19px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.buttons button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px 1px;
+}
+.activeLink button {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/*.buttonBack {*/
+/*    font-size: 20px;*/
+/*    width: 250px;*/
+/*    height: 50px;*/
+/*    border-radius: 19px;*/
+/*    background: rgba(255, 255, 255, 0.4);*/
+/*    transition: 0.5s;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    font-weight: 600;*/
+/*    margin-left: 30px;*/
+/*    margin-top: 50px;*/
+/*}*/
+.skillsArea {
+    display: block;
+    /*border: 3px solid darkred;*/
+    margin: 20px 50px;
+
+}
+.calendarBox {
+    justify-content: center;
+    align-items: center;
+    /*margin: auto;*/
+    height: 600px;
+    text-align: center;
+}
+.calendar {
+    margin: 10px auto;
+    width: 290px;
+    height: 300px;
+}
+.calendarButton {
+    font-size: 18px;
+    width: 280px;
+    /*height: 50px;*/
+    border-radius: 19px;
+    box-shadow: 0 0 3px 2px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.calendarButton:hover {
+    box-shadow: 0 0 3px 3px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+.title {
+    font-size: 18px;
+    border-radius: 19px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 600;
+    width: 280px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px 1px;
+}
+.title:hover {
+    box-shadow: 0 0 3px 1px;
+    background: rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,22 @@
+.avatar img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 0 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32)
+}
+.name_profile {
+    font-weight: bold;
+    margin: 0 0 20px 10px;
+}
+.wall {
+    margin: 10px;
+}
+.infOfMan {
+    display: flex;
+}
+.infBirthAndCity {
+    margin-left: 20px;
+}
+.infBirthAndCity p {
+    margin-bottom: -15px;
+}

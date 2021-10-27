@@ -1,0 +1,18 @@
+.photo {
+    height: 140px;
+    width: 140px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+    border-radius: 50%;
+    padding: 5px;
+}
+.bodyUsers {
+    margin: 20px 20px;
+}
+.follow {
+    background: skyblue;
+    width: 150px;
+}
+.unfollow {
+    background: antiquewhite;
+    width: 150px;
+}

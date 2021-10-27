@@ -1,0 +1,25 @@
+
+.friends {
+    font-size: 15px;
+    color: #2B2B2B;
+    font-weight: 500;
+    cursor: pointer;
+    width: 60px;
+    margin-left: 25px;
+}
+.friendsImg {
+    display: grid;
+    grid-template-columns: minmax(50px, 100px);
+    margin: 10px auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.friends img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
